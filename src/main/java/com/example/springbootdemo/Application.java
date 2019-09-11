@@ -6,11 +6,11 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @ComponentScan(basePackages = {"com.example"})
-public class SpringbootDemoApplication {
+public class Application {
 
     public static void main(String[] args) {
 
-        SpringApplication.run(SpringbootDemoApplication.class, args);
+        SpringApplication.run(Application.class, args);
 
         System.out.println("。。。 启动成功 。。。 ");
 

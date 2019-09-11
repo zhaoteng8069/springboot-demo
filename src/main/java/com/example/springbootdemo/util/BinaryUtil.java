@@ -2,8 +2,14 @@ package com.example.springbootdemo.util;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.JSONObject;
+import com.example.springbootdemo.model.DemoModel;
 
 import java.io.UnsupportedEncodingException;
+import java.text.SimpleDateFormat;
+import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import static java.lang.Character.MAX_RADIX;
 import static java.lang.Character.MIN_RADIX;
@@ -16,7 +22,9 @@ import static java.lang.Character.MIN_RADIX;
  * @Version 1.0
  **/
 public class BinaryUtil {
-
+    public static void error() {
+        int a = 1 / 0;
+    }
     /**
      * 16进制字符串转换为byte数组
      * @param hexStr
@@ -54,13 +62,9 @@ public class BinaryUtil {
 
 
     public static void main(String[] args) throws UnsupportedEncodingException {
-        String payload = "<2030101D023>";
-        //获取16进制状态码
-        String respTypeHex = payload.substring(8, 10);
-        System.out.println(respTypeHex);
-        byte[] bytes1 = hexStr2ByteArr(respTypeHex);
-        for (int i = 0; i < bytes1.length; i++) {
-            System.out.println(bytes1[i]);
-        }
+       /* Map<String, Object> map = new HashMap<>();
+        Object orDefault = map.getOrDefault("", new ArrayList<>());
+        List<String> list = new ArrayList<>();
+        list.forEach();*/
     }
 }

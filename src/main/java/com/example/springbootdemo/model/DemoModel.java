@@ -17,6 +17,16 @@ public class DemoModel implements Serializable {
 
     private String username;
 
+    private Object object;
+
+    public Object getObject() {
+        return object;
+    }
+
+    public void setObject(Object object) {
+        this.object = object;
+    }
+
     public String getId() {
         return id;
     }
